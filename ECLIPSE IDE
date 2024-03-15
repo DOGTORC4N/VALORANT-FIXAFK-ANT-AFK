@@ -1,0 +1,87 @@
+import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.InputEvent;
+
+
+public class FareMakrosu {
+    public static void main(String[] args) throws AWTException, InterruptedException {
+        Robot robot = new Robot();
+
+        for (int i = 0; i < 990; i++) {
+            robot.keyPress(KeyEvent.VK_W);
+            Thread.sleep(3000); 
+            robot.keyRelease(KeyEvent.VK_W);
+
+
+            Thread.sleep(1000); // 
+
+            robot.mouseWheel(20); // 
+            
+            robot.keyPress(KeyEvent.VK_D);
+            Thread.sleep(3200); 
+            robot.keyRelease(KeyEvent.VK_D);
+            
+            robot.keyPress(KeyEvent.VK_K);
+            Thread.sleep(200);
+            robot.keyRelease(KeyEvent.VK_K);
+            
+
+            int x = 2500; // X koordinatı
+            int y = 1300; // Y koordinatı
+            robot.mouseMove(x, y);
+
+            robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
+            
+            robot.keyPress(KeyEvent.VK_S);
+            Thread.sleep(500); //  saniye
+            robot.keyRelease(KeyEvent.VK_S);
+            
+            robot.keyPress(KeyEvent.VK_A);
+            Thread.sleep(900);
+            robot.keyRelease(KeyEvent.VK_A);
+            
+            robot.keyPress(KeyEvent.VK_K);
+            Thread.sleep(200);
+            robot.keyRelease(KeyEvent.VK_K);
+            
+            robot.keyPress(KeyEvent.VK_A);
+            Thread.sleep(500); 
+            robot.keyRelease(KeyEvent.VK_A);
+            
+            Thread.sleep(1000); // 
+            
+            robot.keyPress(KeyEvent.VK_W);
+            Thread.sleep(1500);  
+            robot.keyRelease(KeyEvent.VK_W);
+            
+            robot.keyPress(KeyEvent.VK_D);
+            Thread.sleep(100); 
+            robot.keyRelease(KeyEvent.VK_D);
+            
+            robot.keyPress(KeyEvent.VK_S);
+            Thread.sleep(500); 
+            robot.keyRelease(KeyEvent.VK_S);
+            
+            robot.keyPress(KeyEvent.VK_D);
+            Thread.sleep(500);
+            robot.keyRelease(KeyEvent.VK_D);
+            
+            robot.keyPress(KeyEvent.VK_W);
+            Thread.sleep(500); 
+            robot.keyRelease(KeyEvent.VK_W);
+            
+            robot.keyPress(KeyEvent.VK_D);
+            Thread.sleep(500); 
+            robot.keyRelease(KeyEvent.VK_D);
+            
+            robot.keyPress(KeyEvent.VK_W);
+            Thread.sleep(500);
+            robot.keyRelease(KeyEvent.VK_W);
+            
+            robot.keyPress(KeyEvent.VK_A);
+            Thread.sleep(2500);
+            robot.keyRelease(KeyEvent.VK_A);
+        }
+    }
+}
+
